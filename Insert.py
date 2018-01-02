@@ -1,14 +1,13 @@
 lista=[15,18,25]
-listb=[2,5]
+listb=[2,5,19,30]
 posa=posb=0
 
 
-lena=len(lista)
 lenb=len(listb)
 
 
-for a in range(0,lena):
-    for b in range(posb,lenb):
+for a in range(0,len(lista)):
+    for b in range(posb,len(listb)):
         if(lista[posa]>listb[posb]):
             lista.insert(posa,listb[posb])
             posb+=1
